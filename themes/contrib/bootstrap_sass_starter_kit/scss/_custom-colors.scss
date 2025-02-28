@@ -1,0 +1,269 @@
+// Required
+// @import "functions";
+// @import "variables";
+// @import "variables-dark";
+
+// Add a custom color to $theme-colors
+$custom-colors: (
+  "custom-color": #712cf9
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// @import "maps";
+// @import "mixins";
+// @import "utilities";
+
+// Add a custom color to new theme maps
+
+// Light mode
+$custom-colors-text: (
+  "custom-color": #712cf9
+);
+$custom-colors-bg-subtle: (
+  "custom-color": #e1d2fe
+);
+$custom-colors-border-subtle: (
+  "custom-color": #bfa1fc
+);
+
+$theme-colors-text: map-merge($theme-colors-text, $custom-colors-text);
+$theme-colors-bg-subtle: map-merge($theme-colors-bg-subtle, $custom-colors-bg-subtle);
+$theme-colors-border-subtle: map-merge($theme-colors-border-subtle, $custom-colors-border-subtle);
+
+// Dark mode
+$custom-colors-text-dark: (
+  "custom-color": #e1d2f2
+);
+$custom-colors-bg-subtle-dark: (
+  "custom-color": #8951fa
+);
+$custom-colors-border-subtle-dark: (
+  "custom-color": #e1d2f2
+);
+
+$theme-colors-text-dark: map-merge($theme-colors-text-dark, $custom-colors-text-dark);
+$theme-colors-bg-subtle-dark: map-merge($theme-colors-bg-subtle-dark, $custom-colors-bg-subtle-dark);
+$theme-colors-border-subtle-dark: map-merge($theme-colors-border-subtle-dark, $custom-colors-border-subtle-dark);
+
+// Remainder of Bootstrap imports
+// @import "root";
+// @import "reboot";
+
+$blues: (
+  "blue": $blue-500,
+  "100": $blue-100,
+  "200": $blue-200,
+  "300": $blue-300,
+  "400": $blue-400,
+  "500": $blue-500,
+  "600": $blue-600,
+  "700": $blue-700,
+  "800": $blue-800,
+  "900": $blue-900
+);
+
+// $indigos: (
+//   "indigo": $indigo-500,
+//   "100": $indigo-100,
+//   "200": $indigo-200,
+//   "300": $indigo-300,
+//   "400": $indigo-400,
+//   "500": $indigo-500,
+//   "600": $indigo-600,
+//   "700": $indigo-700,
+//   "800": $indigo-800,
+//   "900": $indigo-900); 
+  
+// $purples: (
+//   "100": $purple-100,
+//   "200": $purple-200,
+//   "300": $purple-300,
+//   "400": $purple-400,
+//   "500": $purple-500,
+//   "600": $purple-600,
+//   "700": $purple-700,
+//   "800": $purple-800,
+//   "900": $purple-900);
+// $pinks: (
+//   "100": $pink-100,
+//   "200": $pink-200,
+//   "300": $pink-300,
+//   "400": $pink-400,
+//   "500": $pink-500,
+//   "600": $pink-600,
+//   "700": $pink-700,
+//   "800": $pink-800,
+//   "900": $pink-900);
+// $reds: (
+//   "100": $red-100,
+//   "200": $red-200,
+//   "300": $red-300,
+//   "400": $red-400,
+//   "500": $red-500,
+//   "600": $red-600,
+//   "700": $red-700,
+//   "800": $red-800,
+//   "900": $red-900);
+// $oranges: (
+//   "100": $orange-100,
+//   "200": $orange-200,
+//   "300": $orange-300,
+//   "400": $orange-400,
+//   "500": $orange-500,
+//   "600": $orange-600,
+//   "700": $orange-700,
+//   "800": $orange-800,
+//   "900": $orange-900);
+// $yellows: (
+//   "100": $yellow-100,
+//   "200": $yellow-200,
+//   "300": $yellow-300,
+//   "400": $yellow-400,
+//   "500": $yellow-500,
+//   "600": $yellow-600,
+//   "700": $yellow-700,
+//   "800": $yellow-800,
+//   "900": $yellow-900);
+// $greens: (
+//   "100": $green-100,
+//   "200": $green-200,
+//   "300": $green-300,
+//   "400": $green-400,
+//   "500": $green-500,
+//   "600": $green-600,
+//   "700": $green-700,
+//   "800": $green-800,
+//   "900": $green-900);
+// $teals: (
+//   "100": $teal-100,
+//   "200": $teal-200,
+//   "300": $teal-300,
+//   "400": $teal-400,
+//   "500": $teal-500,
+//   "600": $teal-600,
+//   "700": $teal-700,
+//   "800": $teal-800,
+//   "900": $teal-900);
+// $cyans: (
+//   "100": $cyan-100,
+//   "200": $cyan-200,
+//   "300": $cyan-300,
+//   "400": $cyan-400,
+//   "500": $cyan-500,
+//   "600": $cyan-600,
+//   "700": $cyan-700,
+//   "800": $cyan-800,
+//   "900": $cyan-900);
+
+//Generating bg and text color for all base Colors
+//Generating All Shades of Gray
+// @each $key, $value in $grays {
+//   .#{$prefix}bg-gray-#{$key} {
+//     background-color: $value !important;
+//   }
+
+//   .text-gray-#{$key} {
+//     color: $value !important;
+//   }
+// }
+
+// @each $key, $value in $blues {
+//   .#{$prefix}bg-#{$key} {
+//     background-color: $value !important;
+//   }
+
+//   .text-#{$key} {
+//     color: $value !important;
+//   }
+// }
+
+// @each $key, $value in $purples {
+//   .#{$prefix}bg-#{$key} {
+//       background-color: $value !important;
+//     }
+  
+//     .text-#{$key} {
+//       color: $value !important;
+//     }
+//   }
+
+// @each $key, $value in $indigos {
+//   .#{$prefix}bg-#{$key} {
+//       background-color: $value !important;
+//     }
+  
+//     .text-#{$key} {
+//       color: $value !important;
+//     }
+//   }
+
+// @each $key, $value in $pinks {
+//   .#{$prefix}bg-#{$key} {
+//       background-color: $value !important;
+//     }
+  
+//     .text-#{$key} {
+//       color: $value !important;
+//     }
+//   }
+
+// @each $key, $value in $reds {
+//   .#{$prefix}bg-#{$key} {
+//       background-color: $value !important;
+//     }
+  
+//     .text-#{$key} {
+//       color: $value !important;
+//     }
+//   }
+
+// @each $key, $value in $oranges {
+//   .#{$prefix}bg-#{$key} {
+//       background-color: $value !important;
+//     }
+  
+//     .text-#{$key} {
+//       color: $value !important;
+//     }
+//   }
+
+// @each $key, $value in $yellows {
+//   .#{$prefix}bg-#{$key} {
+//       background-color: $value !important;
+//     }
+  
+//     .text-#{$key} {
+//       color: $value !important;
+//     }
+//   }
+
+// @each $key, $value in $greens {
+//   .#{$prefix}bg-#{$key} {
+//       background-color: $value !important;
+//     }
+  
+//     .text-#{$key} {
+//       color: $value !important;
+//     }
+//   }
+
+
+// @each $key, $value in $teals {
+//   .#{$prefix}bg-#{$key} {
+//       background-color: $value !important;
+//     }
+  
+//     .text-#{$key} {
+//       color: $value !important;
+//     }
+//   }
+
+// @each $key, $value in $cyans {
+//   .#{$prefix}bg-#{$key} {
+//       background-color: $value !important;
+//     }
+  
+//     .text-#{$key} {
+//       color: $value !important;
+//     }
+//   }

@@ -1,0 +1,22 @@
+
+<h6 class="text-center">Voir aussi</h6>
+<div class="box">
+   {% for row in rows %}
+   <div class="announcement-card">
+                 <a href="{{ base_path ~ row.content['#row']._entity.nid.value }}" >  <h5 class="card-title2 "> {{row.content['#row']._entity.field_libelleann[0].value|slice(0, 50)}}  </h5></a>
+
+   </div>
+
+ 
+        
+{% endfor %}
+     <div class="mt-4 text-center">
+          <a href="{{ base_path }}/portail/annonces"><button class="annoncesbtn">Voir tous</button></a>
+        </div>
+</div>
+
+
+
+
+
+

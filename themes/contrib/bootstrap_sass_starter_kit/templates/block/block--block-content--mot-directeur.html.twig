@@ -1,0 +1,14 @@
+      <div class="sidebar ">
+          <!-- Profile Section -->
+          <div class="profile text-start mb-4">
+            <img src="{{file_url(row.content['#row']._entity.field_image_president.entity.uri.value)}}" alt="Profile" alt="Profile" class="img-fluid rounded-circle profile-image mb-2">
+            <h5 class="text-orange text-center text-xs-center">{{row.content['#row']._entity.field_nom_president[0].value}}</h5>
+            <ul class="list-unstyled fw-bold lh-lg mr-5 text-right text-xs-center">
+              <li><a href="#" class="text-xs-center">→ Mot du président</a></li>
+                Aujourd'hui, nous sommes le {{ "now"|date("d/m/Y") }}.
+
+              <li><a href="{{ base_path }}/portail/president/biographie">→ Biographie</a></li>
+              <li><a href="#">→ Discours</a></li>
+            </ul>
+          </div>
+        </div>

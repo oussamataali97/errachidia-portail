@@ -1,0 +1,119 @@
+//Generating bg and text color for all base Colors
+//Generating All Shades of Gray
+@each $key, $value in $grays {
+  .#{$prefix}bg-gray-#{$key} {
+    background-color: $value;
+  }
+
+  .text-gray-#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $blues {
+  .#{$prefix}bg-#{$key} {
+    background-color: $value;
+  }
+
+  .text-#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $purples {
+  .#{$prefix}bg-#{$key} {
+    background-color: $value;
+  }
+
+  .text-#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $indigos {
+  .#{$prefix}bg-#{$key} {
+    background-color: $value;
+  }
+
+  .text-#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $pinks {
+  .#{$prefix}bg-#{$key} {
+    background-color: $value;
+  }
+
+  .text-#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $reds {
+  .#{$prefix}bg-#{$key} {
+    background-color: $value;
+  }
+
+  .text-#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $oranges {
+  .#{$prefix}bg-#{$key} {
+    background-color: $value;
+  }
+
+  .text-#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $yellows {
+  .#{$prefix}bg-#{$key} {
+    background-color: $value;
+  }
+
+  .text-#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $greens {
+  .#{$prefix}bg-#{$key} {
+    background-color: $value;
+  }
+
+  .text-#{$key} {
+    color: $value;
+  }
+}
+
+
+@each $key, $value in $teals {
+  .#{$prefix}bg-#{$key} {
+    background-color: $value;
+  }
+
+  .text-#{$key} {
+    color: $value;
+  }
+}
+
+@each $key, $value in $cyans {
+  .#{$prefix}bg-#{$key} {
+    background-color: $value;
+  }
+
+  .text-#{$key} {
+    color: $value;
+  }
+}
+
+.#{$prefix}bg-white {
+  background-color: $white;
+}
+.#{$prefix}bg-black {
+  background-color: $black;
+}

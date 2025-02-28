@@ -1,0 +1,11 @@
+/* ROOT */
+
+:root {
+  // pre 
+  --#{$prefix}pre-padding: #{$pre-padding};
+  
+  // blockquotes
+  --#{$prefix}blockquote-padding: 1.5rem;
+  --#{$prefix}blockquote-border-width: .5rem;
+  --#{$prefix}pre-padding: 1.5rem;
+}

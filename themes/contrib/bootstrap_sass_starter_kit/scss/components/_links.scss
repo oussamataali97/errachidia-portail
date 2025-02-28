@@ -1,0 +1,10 @@
+/**
+ * @file
+ * Boostrap SASS Starter Kit specific styling for links.
+ */
+
+.navbar-nav {
+    .nav-link.is-active {
+        color: var(--#{$prefix}navbar-active-color);
+    }
+}

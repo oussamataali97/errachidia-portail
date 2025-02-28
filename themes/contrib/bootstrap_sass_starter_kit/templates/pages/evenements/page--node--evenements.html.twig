@@ -1,0 +1,16 @@
+{{page.topheader}}
+{{page.mainheader}}
+
+<div class="container">
+   <div class="row gx-0 ">
+    <div class="col-lg-9">
+    {{page.content}}
+
+    </div>
+    <div class="col-lg-3">
+  {{ drupal_view('event_view', 'alleventsec') }}
+    </div>
+   </div>
+   </div>
+
+{{page.footer}}

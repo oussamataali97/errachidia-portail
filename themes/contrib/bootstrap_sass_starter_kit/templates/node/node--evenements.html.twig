@@ -1,0 +1,19 @@
+
+  <div class="annonce-node container">
+  <h1 class="title my-3 ">{{ content.field_evenement_title}}</h1>
+  <div class="d-flex  ">
+  <div class="">
+    <p style="font-size:13px;text-decoration:italic; color:gray; margin-right:10px;"><i class="fas fa-calendar-week"></i> {{ node.field_date_event.value|date("d F Y") }} |  <i class="fas fa-map-pin ml-3"></i> {{ node.field_lieu_evenement.value}}</p>
+
+  </div>
+
+
+  </div>
+  <div class="image">
+    <img src=" {{ file_url(content.field_image_event.0['#item'].entity.uri.value) }}" class="img-node" alt=""> 
+  </div>
+  <div class="description mt-5">
+    {{ content.field_description_event}}
+  </div>
+</div>
+

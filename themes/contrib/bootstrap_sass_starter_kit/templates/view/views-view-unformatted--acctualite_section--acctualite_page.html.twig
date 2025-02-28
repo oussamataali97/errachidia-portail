@@ -1,0 +1,34 @@
+   <h2 class="text-orange mb-4 text-center p-5  section-bg ">Tous les acctualités</h2>
+
+   <div class=" container">
+           <div class="row g-4">
+                            
+
+   {% for row in rows %}
+  
+
+ <div class="col-md-4 card-annoncess">
+            <a class="annonce-link2" href="{{ url('entity.node.canonical', {'node': row.content['#row']._entity.nid.value}) }}"><div class="card-shadow">
+                <img class="img-annonces" src=" {{file_url(row.content['#row']._entity.field_image_actualite.entity.uri.value)}}" class="card-img-top" alt="Image 1">
+              <div class="card-body">
+                <h5 class="card-title"> {{row.content['#row']._entity.field_libelle[0].value|slice(0, 50)}}  </h5>
+                <p class="card-date "> <i class="fas fa-calendar-week pe-1"></i>{{ row.content['#row']._entity.created.value|date("d F Y") }}</p>
+                <p class="card-text annonce-desciptions" >
+{{ row.content['#row']._entity.field_description[0].processed|striptags|replace({'&nbsp;': ' '})|slice(0, 100) }}
+                </p>
+                
+              </div>
+            </div>
+            </a>
+            </div>
+        
+{% endfor %}
+     
+        
+  </div>
+</div>
+
+
+
+
+

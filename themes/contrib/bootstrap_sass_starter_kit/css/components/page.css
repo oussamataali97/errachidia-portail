@@ -1,0 +1,32 @@
+/**
+ * @file
+ * Styles for Boostrap SASS Starter Kit page.
+ */
+
+/* Hack for .placeholder issue https://www.drupal.org/project/drupal/issues/3233533 */
+/* em.placeholder {
+  vertical-align: unset!important;
+  cursor: unset!important;
+  background-color: unset!important;
+  opacity: unset!important;
+} */
+
+/* https://www.drupal.org/project/bootstrap_sass_starter_kit/issues/3228330#comment-14770789 */
+
+[data-drupal-messages] .placeholder,
+[data-drupal-messages-fallback] .placeholder {
+  display: initial;
+  min-height: initial;
+  vertical-align: initial;
+  cursor: initial;
+  background-color: initial;
+  opacity: initial;
+}
+/* section.full-width {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+} */

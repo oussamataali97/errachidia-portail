@@ -1,0 +1,9 @@
+/* OVERRIDES */
+
+// fix for col auto sizing
+// https: //github.com/twbs/bootstrap/issues/39979 
+.row {
+  >.col {
+    width: 0;
+  }
+}

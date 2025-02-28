@@ -1,0 +1,41 @@
+{#
+/**
+ * @file
+ * Default theme implementation for status messages.
+ *
+ * Displays status, error, and warning messages, grouped by type.
+ *
+ * Adds Bootstrap's alert classes for styled messages.
+ *
+ * Available variables:
+ * - message_list: List of messages to be displayed, grouped by type.
+ * - status_headings: List of all status types.
+ * - attributes: HTML attributes for the element, including:
+ *   - class: HTML classes.
+ *
+ * @ingroup themeable
+ */
+#}
+<div data-drupal-messages>
+  {% for type, messages in message_list %}
+    <div
+      role="contentinfo"
+      aria-label="{{ status_headings[type] }}"
+      class="alert {{ type == 'status' ? 'alert-success' : (type == 'error' ? 'alert-danger' : 'alert-warning') }}"
+      {{ attributes|without('role', 'aria-label', 'class') }}
+    >
+      {% if status_headings[type] %}
+        <h2 class="visually-hidden">{{ status_headings[type] }}</h2>
+      {% endif %}
+      {% if messages|length > 1 %}
+        <ul class="mb-0">
+          {% for message in messages %}
+            <li>{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class="mb-0">{{ messages|first }}</p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

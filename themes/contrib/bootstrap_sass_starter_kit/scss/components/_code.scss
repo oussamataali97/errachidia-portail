@@ -1,0 +1,66 @@
+/**
+ * @file
+ * Visual styles for Drupal's ajax/code component.
+ * These are loaded as part of core/drupal and may 
+ * need to be overridden here
+ */
+
+// Code
+
+//  pre,
+//  code,
+//  kbd,
+//  samp {
+//   //  font-family: $font-family-code;
+//   //  @include font-size(1em); // Correct the odd `em` font sizing in all browsers.
+//   }
+
+
+// 1. Remove browser default top margin
+// 2. Reset browser default of `1em` to use `rem`s
+// 3. Don't allow content to break outside
+
+pre {
+  background-color: var(--#{$prefix}body-bg);
+  white-space: pre-wrap;
+  display: table;
+  padding: var(--#{$prefix}pre-padding);
+  //  display: block;
+  //  margin-top: 0; // 1
+  //  margin-bottom: 1rem; // 2
+  //  overflow: auto; // 3
+  //  @include font-size($code-font-size);
+  //  color: $pre-color;
+
+  // Account for some code outputs that place code tags in pre tags
+  code {
+    //  @include font-size(inherit);
+    //  color: inherit;
+    //  word-break: normal;
+  }
+}
+
+code {
+  //  @include font-size($code-font-size);
+  //  color: var(--#{$prefix}code-color);
+  //  word-wrap: break-word;
+
+  //  // Streamline the style when inside anchors to avoid broken underline and more
+  //  a>& {
+  //    color: inherit;
+  //  }
+}
+
+kbd {
+  //  padding: $kbd-padding-y $kbd-padding-x;
+  //  @include font-size($kbd-font-size);
+  //  color: $kbd-color;
+  //  background-color: $kbd-bg;
+  //  @include border-radius($border-radius-sm);
+
+  //  kbd {
+  //    padding: 0;
+  //    @include font-size(1em);
+  //    font-weight: $nested-kbd-font-weight;
+  //  }
+}

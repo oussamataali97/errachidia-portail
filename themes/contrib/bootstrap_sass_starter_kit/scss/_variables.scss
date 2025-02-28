@@ -1,0 +1,78 @@
+/* VARIABLES */
+// Prefix for :root CSS variables
+
+$variable-prefix: bssk- !default; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix: bssk- !default;
+
+// Body
+//
+// Settings for the `<body>` element.
+// $body-bg: $white;
+// $body-color: $gray-800;
+// $inverse-bg: $primary-shade;
+// $inverse-color: $white;
+// Links
+//
+// Style anchor elements.
+//$link-color: $accent-shade;
+$link-decoration: none !default;
+//$link-hover-color: $accent-dark;
+//$link-hover-decoration: underline;
+// Comments
+$comment-spacer-x: 1.25em !default;
+$comment-spacer-y: 1.25em !default;
+
+// add websafe font (roboto)
+$font-family-sans-serif: 'robotoregular', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+// Responsive font sizes
+$enable-responsive-font-sizes: true !default;
+// $enable-shadows: false;
+// $enable-gradients: true;
+
+// Breadcrumbs
+
+// scss-docs-start breadcrumb-variables
+$breadcrumb-font-size: null !default;
+$breadcrumb-padding-y: 1rem !default;
+$breadcrumb-padding-x: 0 !default;
+$breadcrumb-item-padding-x: .5rem !default;
+$breadcrumb-margin-bottom: 0rem !default;
+$breadcrumb-bg: null !default;
+$breadcrumb-divider-color: var(--#{$prefix}secondary-color) !default;
+$breadcrumb-active-color: var(--#{$prefix}secondary-color) !default;
+$breadcrumb-divider: quote(">") !default;
+$breadcrumb-divider-flipped: $breadcrumb-divider !default;
+$breadcrumb-border-radius: null !default;
+// scss-docs-end breadcrumb-variables
+
+// $enable-caret: true;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: true !default;
+$enable-transitions: true !default;
+$enable-reduced-motion: true !default;
+$enable-smooth-scroll: true !default;
+$enable-grid-classes: true !default;
+$enable-container-classes: true !default;
+$enable-cssgrid: false !default;
+$enable-button-pointers: true !default;
+$enable-rfs: true !default;
+$enable-validation-icons: true !default;
+$enable-negative-margins: false !default;
+$enable-deprecation-messages: true !default;
+$enable-important-utilities: false !default;
+
+$enable-dark-mode: true !default;
+$color-mode-type: media-query !default;
+
+$pre-padding: 1.5rem !default;
+
+// colors
+$red: #B80000;

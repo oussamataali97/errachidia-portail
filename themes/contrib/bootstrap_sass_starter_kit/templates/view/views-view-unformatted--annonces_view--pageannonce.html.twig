@@ -1,0 +1,18 @@
+         <h2 class="text-orange mb-4 text-center p-5  section-bg" >ANNONCES</h2>
+            <div class=" container">
+
+   {% for row in rows %}
+         <div class="announcement-card w-full px-2 py-4 mt-5">
+            <div class="date-box">
+               <div>{{ row.content['#row']._entity.created.value|date("d") }}</div>
+               <div class="month">{{ row.content['#row']._entity.created.value|date("F")|slice(0, 3) }}</div>
+            </div>
+            <div class="text-section  d-flex justify-content-between" style="width:100%;">
+            <a style="    font-size: 20px;" class="annonce-link2 text-black" href="{{ base_path ~ 'node/' ~ row.content['#row']._entity.nid.value }}">{{row.content['#row']._entity.field_libelleann[0].value }}</a>
+              <a href="{{ base_path ~ 'node/' ~ row.content['#row']._entity.nid.value }}" class="align-self-end link-info" style="margin-right:20px !important;">Lire la suite</a>
+            </div>
+         </div>
+        {% endfor %}
+
+      </div>
+</div>

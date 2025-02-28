@@ -1,0 +1,26 @@
+
+  <div class="annonce-node container">
+  <h1 class="title my-3 ">{{ content.field_appel_libelle	
+}}</h1>
+  <div class="d-flex  ">
+  <div class="">
+    <p style="font-size:13px;text-decoration:italic; color:gray; margin-right:10px;"><i class="fas fa-calendar-week"></i> {{ node.field_date_event.value|date("d F Y") }} </p>
+
+  </div>
+
+
+  </div>
+  <div class="image">
+    <img src=" {{ file_url(content.field_image_ann.0['#item'].entity.uri.value) }}" class="img-node" alt=""> 
+  </div>
+  <div class="description ">
+    {{ content.field_appel_description}}
+  </div>
+  <div class="fichers">
+  <h5 class="fw-bolder">Fichier :</h5><br>
+  <a href="{{ file_url(node.field_fichiers_pdf.entity.uri.value) }}
+">{{ node.field_fichiers_pdf.entity.filename.value }}
+</a>
+  </div>
+</div>
+

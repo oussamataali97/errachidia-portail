@@ -1,0 +1,56 @@
+global-styling:
+  version: VERSION
+  js:
+    js/popper.min.js: { weight: -49 }
+    js/bootstrap.min.js: { weight: -48 }
+    js/bssk.js: {}
+    js/custom.js: {}
+  css:
+    component:
+      css/style.min.css: {}
+    theme:
+      css/print.min.css: { media: print }
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once
+
+all:
+  version: VERSION
+  css:
+    theme:
+      css/entity-print.min.css: {}
+      css/style.css: {}
+
+# affix:
+#   version: VERSION
+#   js:
+#     js/affix.js: {}
+  # css:
+  #   component:
+  #     css/components/affix.css: {}
+
+image_fluid:
+  version: VERSION
+  css:
+    component:
+      css/components/img-fluid.css: {}
+
+slide_nav:
+  version: VERSION
+  css:
+    theme:
+      css/components/slide-nav.css: {}
+
+sidebar_collapse:
+  version: VERSION
+  js:
+    js/sidebar-collapse.js: {}
+  css:
+    component:
+      css/components/sidebar-collapse.css: {}
+
+toast:
+  version: VERSION
+  js:
+    js/toast.js: {}

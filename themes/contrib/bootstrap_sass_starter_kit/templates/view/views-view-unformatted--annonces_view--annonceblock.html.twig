@@ -1,0 +1,19 @@
+   <div data-aos="zoom-in">
+         <h2 class="announcement-title">Annonces</h2>
+         
+   {% for row in rows %}
+       <a class="annonce-link2" href="{{ base_path ~ 'node/' ~ row.content['#row']._entity.nid.value }}">  <div class="announcement-card w-full">
+            <div class="date-box">
+               <div>{{ row.content['#row']._entity.created.value|date("d") }}</div>
+               <div class="month">{{ row.content['#row']._entity.created.value|date("F")|slice(0, 3) }}</div>
+            </div>
+            <div class="text-section text-black">
+              {{row.content['#row']._entity.field_libelleann[0].value|slice(0, 80) }}...
+            </div>
+         </div></a>
+        {% endfor %}
+     <div class="mt-4 text-center">
+          <a href="{{ base_path }}/portail/annonces"><button class="annoncesbtn">Voir tous</button></a>
+        </div>
+      </div>
+</div>

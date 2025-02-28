@@ -1,0 +1,22 @@
+   
+                  <h2 class="mb-4  p-5  section-midelt" >Midelt</h2>
+
+   <div class="col-lg-9 container text-content">
+           <div class="row g-4 mt-5">
+
+   {% for row in rows %}
+
+                 {{ row.content['#row']._entity.field_midelt[0].processed }}
+
+              
+
+{% endfor %}
+     
+        
+  </div>
+</div>
+
+
+
+
+

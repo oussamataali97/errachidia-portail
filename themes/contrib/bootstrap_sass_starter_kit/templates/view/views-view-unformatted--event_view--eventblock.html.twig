@@ -1,0 +1,47 @@
+   <div class="col-lg-12 container">
+           <div class="row g-4">
+               <h2 class="text-orange mb-4">Touts les evenements</h2>
+
+   {% for row in rows %}
+  
+{% if row.content['#row']._entity.field_date_event.value %}
+  {% set raw_date = row.content['#row']._entity.field_date_event.value %}
+  {% set day = raw_date|date('d') %}
+  {% set month_year = raw_date|date('F Y') %}
+{% endif %}
+
+
+             <div class="col-md-3" data-aos="zoom-out">
+                            <div class="event-card text-content" >
+                <img class="img-annonces" src=" {{file_url(row.content['#row']._entity.field_image_event.entity.uri.value)}}" class="card-img-top" alt="Image 1">
+                    <div class="event-card-body">
+                        <div class="event-title">
+                          {{row.content['#row']._entity.field_evenement_title[0].value|slice(0, 50)}}
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center mt-5">
+                         <div class="event-date d-flex align-items-center flex-column ">
+                            <span>{{day}}</span>
+                            <span class="date-text">{{ month_year }}</span>
+                        </div>
+                      
+                        <div class="event-info ml-2">
+                            <p><i class="fas fa-map-marker-alt"></i>  {{row.content['#row']._entity.field_lieu_evenement[0].value}}</p>
+                        </div>
+                        </div>
+                                       <a href="{{ base_path ~ 'node/' ~ row.content['#row']._entity.nid.value }}" class="annonce-link">Lire la suite</a>
+
+                    </div>
+                </div>
+        </div>
+        
+{% endfor %}
+       <div class="mt-4 text-center">
+          <a href="{{ base_path }}/portail/evenements"><button class="btn btn-primary"><i class="fas fa-eye " style="font-size:12px;"></i> Voir plus</button></a>
+        </div>
+  </div>
+</div>
+
+
+
+
+

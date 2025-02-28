@@ -1,0 +1,46 @@
+/* ------------------ Header ------------------ */
+
+#navbar-top {
+  padding: 0 1rem;
+}
+
+.navbar-brand {
+  .site-logo {
+    margin-right: 1rem;
+  }
+
+  &__logo {
+    transform: scale(90%);
+    transition: transform 0.25s ease-out;
+
+    &:hover {
+      transform: scale(100%);
+    }
+  }
+
+  &__slogan {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 33.9em) {
+
+  .navbar-toggleable-xs .navbar-nav .nav-item+.nav-item,
+  .navbar-toggleable-xs.collapse.in .navbar-nav .nav-item {
+    margin-left: 0;
+    float: none;
+  }
+}
+
+@media (max-width: 47.9em) {
+
+  .navbar-toggleable-sm .navbar-nav .nav-item+.nav-item,
+  .navbar-toggleable-xs.collapse.in .navbar-nav .nav-item {
+    margin-left: 0;
+    float: none;
+  }
+}
+
+#header {
+  display: initial;
+}

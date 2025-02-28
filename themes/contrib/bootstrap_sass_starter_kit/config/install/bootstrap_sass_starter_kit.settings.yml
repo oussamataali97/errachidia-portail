@@ -1,0 +1,116 @@
+# Library.
+# ----------------------------
+bootstrap_sass_starter_kit_library: 'production'
+# Layout.
+# ----------------------------
+bootstrap_sass_starter_kit_sidebar_position: 'both'
+bootstrap_sass_starter_kit_content_offset: 0
+bootstrap_sass_starter_kit_sidebar_first_width: 3
+bootstrap_sass_starter_kit_sidebar_first_offset: 0
+bootstrap_sass_starter_kit_sidebar_second_width: 3
+bootstrap_sass_starter_kit_sidebar_second_offset: 0
+
+# Container.
+# ----------------------------
+bootstrap_sass_starter_kit_container: 'container'
+# bootstrap_sass_starter_kit_fluid_container: 'container'
+
+# Buttons.
+# ----------------------------
+bootstrap_sass_starter_kit_button: 1
+bootstrap_sass_starter_kit_button_size: ''
+bootstrap_sass_starter_kit_button_type: 'secondary'
+bootstrap_sass_starter_kit_button_outline: 0
+
+# Navbar.
+# ----------------------------
+bootstrap_sass_starter_kit_navbar_toggle: 'navbar-toggleable-lg'
+bootstrap_sass_starter_kit_navbar_container: 'container'
+bootstrap_sass_starter_kit_navbar_top_position: ''
+bootstrap_sass_starter_kit_navbar_top_color: ''
+bootstrap_sass_starter_kit_navbar_top_background: ''
+bootstrap_sass_starter_kit_navbar_position: ''
+bootstrap_sass_starter_kit_navbar_color: 'navbar-dark'
+bootstrap_sass_starter_kit_navbar_background: 'bg-primary'
+bootstrap_sass_starter_kit_navbar_offcanvas: ''
+
+# Messages.
+# ----------------------------
+bootstrap_sass_starter_kit_messages_widget: 'toasts'
+
+# Form.
+# ----------------------------
+bootstrap_sass_starter_kit_checkbox: 'switch'
+
+# Tables.
+# ----------------------------
+# bootstrap_sass_starter_kit_table_hover: 1
+# bootstrap_sass_starter_kit_table_style: 'table-striped'
+
+# Regions.
+# ----------------------------
+bootstrap_sass_starter_kit_region_clean_top_header: 0
+bootstrap_sass_starter_kit_region_class_top_header: ''
+
+bootstrap_sass_starter_kit_region_clean_top_header_form: 0 
+bootstrap_sass_starter_kit_region_class_top_header_form: ''
+
+bootstrap_sass_starter_kit_region_clean_header: 1
+bootstrap_sass_starter_kit_region_class_header: ''
+
+bootstrap_sass_starter_kit_region_clean_header_form: 0
+bootstrap_sass_starter_kit_region_class_header_form: ''
+
+bootstrap_sass_starter_kit_region_clean_primary_menu: 1
+bootstrap_sass_starter_kit_region_class_primary_menu: ''
+
+bootstrap_sass_starter_kit_region_clean_secondary_menu: 0
+bootstrap_sass_starter_kit_region_class_secondary_menu: ''
+
+bootstrap_sass_starter_kit_region_clean_page_top: 0
+bootstrap_sass_starter_kit_region_class_page_top: ''
+
+bootstrap_sass_starter_kit_region_clean_page_bottom: 0
+bootstrap_sass_starter_kit_region_class_page_bottom: ''
+
+bootstrap_sass_starter_kit_region_clean_highlighted: 1
+bootstrap_sass_starter_kit_region_class_highlighted: ''
+
+bootstrap_sass_starter_kit_region_clean_featured_top: 0
+bootstrap_sass_starter_kit_region_class_featured_top: ''
+
+bootstrap_sass_starter_kit_region_clean_breadcrumb: 1
+bootstrap_sass_starter_kit_region_class_breadcrumb: ''
+
+bootstrap_sass_starter_kit_region_clean_content: 1
+bootstrap_sass_starter_kit_region_class_content: ''
+
+bootstrap_sass_starter_kit_region_clean_sidebar_first: 1
+bootstrap_sass_starter_kit_region_class_sidebar_first: ''
+
+bootstrap_sass_starter_kit_region_clean_sidebar_second: 1
+bootstrap_sass_starter_kit_region_class_sidebar_second: ''
+
+bootstrap_sass_starter_kit_region_clean_featured_bottom_first: 0
+bootstrap_sass_starter_kit_region_class_featured_bottom_first: ''
+
+bootstrap_sass_starter_kit_region_clean_featured_bottom_second: 0
+bootstrap_sass_starter_kit_region_class_featured_bottom_second: ''
+
+bootstrap_sass_starter_kit_region_clean_featured_bottom_third: 0
+bootstrap_sass_starter_kit_region_class_featured_bottom_third: ''
+
+bootstrap_sass_starter_kit_region_clean_footer_first: 0
+bootstrap_sass_starter_kit_region_class_footer_first: ''
+
+bootstrap_sass_starter_kit_region_clean_footer_second: 0
+bootstrap_sass_starter_kit_region_class_footer_second: ''
+
+bootstrap_sass_starter_kit_region_clean_footer_third: 0
+bootstrap_sass_starter_kit_region_class_footer_third: ''
+
+bootstrap_sass_starter_kit_region_clean_footer_fourth: 0
+bootstrap_sass_starter_kit_region_class_footer_fourth: ''
+
+bootstrap_sass_starter_kit_region_clean_footer_fifth: 0
+bootstrap_sass_starter_kit_region_class_footer_fifth: ''

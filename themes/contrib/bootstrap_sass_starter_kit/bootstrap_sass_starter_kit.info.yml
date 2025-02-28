@@ -1,0 +1,21 @@
+name: Bootstrap SASS Starter Kit
+type: theme
+description: "Bootstrap SASS Starter Kit"
+core_version_requirement: ^9 || ^10 || ^11
+base theme: false
+
+libraries:
+  - bootstrap_sass_starter_kit/global-styling
+
+regions:
+  topheader: "Header Top"
+  mainheader: "Main Header"
+  banner: "Banner"
+  all_acctualite: "All Acctualités"
+  mot_directeur: "Mot de directeur"
+  all_annonces: "All Annonces"
+  provaince: "Provaince"
+  chiffre_cles: "Chiffre clé"
+  evenements: " Evenements"
+  content: "Content"
+  footer: "Footer"

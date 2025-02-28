@@ -1,0 +1,157 @@
+/* Entity Print */
+
+// @import "fonts_print";
+
+/* PRINT STYLES GO HERE
+-------------------------------------------------*/
+// import base styles, fonts etc
+
+// @import "import";
+// @import "fonts_print";
+
+.content>* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  color: #000;
+}
+
+html {
+  font-size: 9pt;
+}
+
+body {
+  line-height: 1.1;
+  background: none;
+}
+
+ul {
+  padding-bottom: 1em;
+  line-height: 1.1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1.1;
+}
+
+span {
+  line-height: 1.1;
+}
+
+.title,
+.field--name-title,
+.node__title,
+h1 {
+  font-size: 12pt;
+  line-height: 1.1;
+  padding-bottom: 0;
+}
+
+h2 {
+  font-size: 11pt;
+  // font-family: $font-family-serif;
+  line-height: 1.1;
+  padding-bottom: 0;
+}
+
+h3 {
+  font-size: 10pt;
+  // font-family: $font-family-serif;
+  line-height: 1.1;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 9pt;
+  // font-family: $font-family-serif;
+  line-height: 1;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-size: 8pt;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+h6 {
+  font-size: 8pt;
+  line-height: 1;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+p {
+  // font-family: $font-family-sans-serif;
+  line-height: 1.1;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  padding-bottom: 0;
+}
+
+em {
+  line-height: 1;
+  display: block;
+  font-size: 6pt;
+  padding-bottom: 1em;
+}
+
+.field--name-field-tags,
+.print-hide {
+  display: none;
+}
+
+ul {
+  padding-bottom: 1em;
+  line-height: 1.1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1.1;
+}
+
+span {
+  line-height: 1.1;
+}
+
+ul {
+  padding-bottom: 0;
+}
+
+em {
+  // font-family: $font-family-sans-serif;
+  line-height: 1;
+  display: block;
+  font-size: 6pt;
+  // margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+// .page {
+//   padding: 1rem;
+// }
+
+// .page img {
+//   max-width: 100%;
+//   height: auto;
+// }
+
+// .page td img {
+//   max-width: none;
+// }
+
+.field--name-field-tags,
+.print-hide {
+  display: none;
+}

@@ -1,0 +1,32 @@
+/* IMPORT */
+
+// Bootstrap SASS Starter Kit specific variables - load before bootstrap (first)
+
+// Make sure to import Bootstrap's `bootstrap.scss` in between `_variables.scss`
+// and `_bootswatch.scss` ! 
+
+@import "variables_pre";
+
+// Bootswatch variables - uncomment to use
+// @import "../node_modules/bootswatch/dist/sketchy/variables";
+
+// call local variables after - if set !default they are trumped by the 
+// bootswatch theme 
+@import "variables";
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Bootswatch specific - non variables - uncomment to use
+// @import "../node_modules/bootswatch/dist/sketchy/bootswatch";
+
+// bootstrap theme overrides
+@import "overrides";
+
+// Bootstrap SASS Starter Kit root
+@import "root";
+
+// Generate custom shades - required for style_guide (admin)
+@import "custom-shades";
+
+// Drupal specific components and overrides
+@import "components";

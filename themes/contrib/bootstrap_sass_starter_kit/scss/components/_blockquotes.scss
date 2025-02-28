@@ -1,0 +1,34 @@
+/**
+ * Blockquotes styling.
+ */
+
+.blockquote {
+  margin-bottom: $blockquote-margin-y;
+  // @include font-size($blockquote-font-size);
+  font-size: var(--#{$prefix}body-font-size);
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.blockquote {
+  border-left: var(--#{$prefix}blockquote-border-width) solid var(--#{$prefix}body-color);
+  font-style: italic;
+  margin-left: 0;
+  margin-right: 0;
+  overflow: hidden;
+  padding-left: var(--#{$prefix}blockquote-padding);
+  padding-right: var(--#{$prefix}blockquote-padding);
+}
+
+.blockquote-footer {
+  margin-top: -$blockquote-margin-y;
+  margin-bottom: $blockquote-margin-y;
+  @include font-size($blockquote-footer-font-size);
+  color: $blockquote-footer-color;
+
+  &::before {
+    content: "\2014\00A0"; // em dash, nbsp
+  }
+}

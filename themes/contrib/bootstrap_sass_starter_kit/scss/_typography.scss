@@ -1,0 +1,160 @@
+/* TYPOGRAPHY */
+
+/* Google Fonts */
+
+//@import url("https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900,900italic");
+//@import url("https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900");
+// font families
+$font-lato: 'Lato',
+Arial,
+Verdana,
+sans-serif;
+$font-raleway: 'Raleway',
+Arial,
+Verdana,
+sans-serif;
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-serif:           Times, Georgia, "Times New Roman", Times, serif;
+$font-family-base: $font-family-sans-serif;
+$font-family-code: $font-family-monospace;
+
+$font-size-root:              null;
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+$font-size-xs:                $font-size-base * .75;
+$font-size-sm:                $font-size-base * .875;
+$font-size-lg:                $font-size-base * 1.25;
+
+$font-weight-lighter:         lighter;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            700;
+$font-weight-bolder:          bolder;
+
+$font-weight-base:            $font-weight-normal;
+
+$line-height-base:            1.5;
+$line-height-sm:              1.25;
+$line-height-lg:              2;
+
+$h1-font-size:                $font-size-base * 2.5;
+$h2-font-size:                $font-size-base * 2;
+$h3-font-size:                $font-size-base * 1.75;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.25;
+$h6-font-size:                $font-size-base;
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size
+);
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+// scss-docs-end spacer-variables-maps
+
+// Position
+//
+// Define the edge positioning anchors of the position utilities.
+
+// scss-docs-start position-map
+$position-values: (
+  0: 0,
+  50: 50%,
+  100: 100%
+);
+// scss-docs-end position-map
+
+// scss-docs-start headings-variables
+$headings-margin-bottom: $spacer * .5;
+$headings-font-family: $font-family-serif;
+$headings-font-family2: $font-family-serif;
+$headings-font-style: normal;
+$headings-font-weight: 500;
+$headings-line-height: 1.2;
+$headings-color: inherit;
+// scss-docs-end headings-variables
+
+// scss-docs-start display-headings
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+
+$display-font-family: null;
+$display-font-style: null;
+$display-font-weight: 300;
+$display-line-height: $headings-line-height;
+// scss-docs-end display-headings
+
+// scss-docs-start type-variables
+$lead-font-size: $font-size-base * 1.25;
+$lead-font-weight: 300;
+
+$small-font-size: .875em;
+
+$sub-sup-font-size: .75em;
+
+// fusv-disable
+// $text-muted: var(--#{$prefix}secondary-color); // Deprecated in 5.3.0
+// fusv-enable
+
+$initialism-font-size: $small-font-size;
+
+$blockquote-margin-y: $spacer;
+$blockquote-font-size: $font-size-base * 1.25;
+// $blockquote-footer-color: $gray-600;
+$blockquote-footer-font-size: $small-font-size;
+$blockquote-border-width: .5rem;
+$blockquote-padding: 1.5rem;
+
+$hr-margin-y: $spacer;
+$hr-color: inherit;
+
+// fusv-disable
+$hr-bg-color: null; // Deprecated in v5.2.0
+$hr-height: null; // Deprecated in v5.2.0
+// fusv-enable
+
+$hr-border-color: null; // Allows for inherited colors
+$hr-opacity: .25;
+
+$legend-margin-bottom: .5rem;
+$legend-font-size: 1.5rem;
+$legend-font-weight: null;
+
+$dt-font-weight: $font-weight-bold;
+
+$list-inline-padding: .5rem;
+$pre-padding: 1.5rem;
+$mark-padding: .1875em;
+// $mark-color: $body-color;
+// $mark-bg: $yellow-100;
+// scss-docs-end type-variables
+
+// Style anchor elements.
+//$link-color: $accent-shade;
+$link-decoration: none;
+//$link-hover-color: $accent-dark;
+//$link-hover-decoration: underline;
+// Comments
+$comment-spacer-x: 1.25em;
+$comment-spacer-y: 1.25em;
