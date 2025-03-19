@@ -1,9 +1,10 @@
 
 <h6 class="text-center">Lire aussi</h6>
-<div class="box">
+<div class="box ">
    {% for row in rows %}
-   <div class="announcement-card">
-                 <a href="{{ url('entity.node.canonical', {'node': row.content['#row']._entity.nid.value}) }}" >  <h5 class="card-title2 "> {{row.content['#row']._entity.field_libelle[0].value|slice(0, 50)}}  </h5></a>
+   <div class="announcement-card p-0">
+   <img src="{{file_url(row.content['#row']._entity.field_image_actualite.entity.uri.value)}}" alt="" style="object-fit:cover;height:70px" class="img-fluid w-25 ">
+                 <a href="{{ url('entity.node.canonical', {'node': row.content['#row']._entity.nid.value}) }}" >  <h5 class="card-title2 p-2"> {{row.content['#row']._entity.field_libelle[0].value|slice(0, 50)}}  </h5></a>
 
    </div>
 

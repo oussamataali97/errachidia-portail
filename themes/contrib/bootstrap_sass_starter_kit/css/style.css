@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 html[dir="rtl"] body {
   direction: ltr !important;
   text-align: left !important;
+}
+
+html, body {
+  overflow-x: hidden !important;
+  width: 100% !important;
 }
 
 html[lang="ar"] p,  
@@ -325,6 +331,8 @@ left: 0;
   margin-bottom: 23px;
   display: flex;
   align-items: center;
+  box-shadow: 0 0 13px 1px rgb(0 0 0 / 16%);
+  background-color: white;
 
 }
 
@@ -335,6 +343,10 @@ left: 0;
 .announcement-card:hover{
   border: 1px solid #ffca37;
   transition: 0.3s all ease-in;
+}
+
+#block-bootstrap-sass-starter-kit-content > div > div.announcement-card.w-full.px-2.py-4.mt-5 > div.date-box{
+  padding:3rem;
 }
 
 .announcement-card:hover .date-box{
@@ -355,7 +367,7 @@ transition: 0.3s all ease-in;
   background-image: url('./../images/chiffre.jpg');
   background-attachment: fixed;
  
-  
+  font-family: "Poppins", sans-serif;
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -435,7 +447,7 @@ transition: 0.3s all ease-in;
 
 .event-card img {
   width: 100%;
-  height: auto;
+
 }
 
 .event-card-body {
@@ -581,7 +593,7 @@ body > div.dialog-off-canvas-main-canvas > div.annonce-node.container > div.d-fl
 }
 
 .card-shadow{
-min-height:350px;
+min-height:460px;
 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 
@@ -710,6 +722,10 @@ color: inherit;
   transform: rotate(360deg); /* Full rotation on hover */
 }
 
+.box-etatcivil:hover{
+  background-color: #c07512;
+}
+
 .section-demarche{
 
   position: relative;
@@ -723,6 +739,21 @@ color: inherit;
     font-family: "Nunito Sans", serif;
     font-weight:500;
     font-size: 50px;
+}
+
+.section-bg-title{
+  position: relative;
+  background: url(../../../../sites/default/files/motif.png);
+
+  display: block;
+  padding: 80px 0 0;
+  z-index: 1;
+  background-size: 200px;
+  color:rgb(37, 37, 37);
+  text-transform: uppercase;
+  
+  font-weight:500;
+  font-size: 50px;
 }
 
 
@@ -770,7 +801,6 @@ p {
   background: url(../../../../sites/default/files/banner1.jpg);
   height: 240px;
   background-size: cover;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -779,6 +809,9 @@ p {
   font-size: 40px;
   color:white;
 }
+
+.secti
+
 
 .section-midelt{
   background: url(../../../../sites/default/files/midelt3.jpg);
@@ -937,7 +970,10 @@ p {
 }
 
 
-
+.annonce-node p{
+  margin-top:30px;
+line-height: 40px;
+font-family: "Poppins", sans-serif;}
 
 @keyframes fadeSlideIn {
   0% {
@@ -950,48 +986,9 @@ p {
   }
 }
 
-@media screen and ( max-width:500px) {
-  .logo-img{
-    height:70px !important;
-  }
 
 
 
-  .carousel-inner img{
-    height: 300px !important;
-    background-size: cover;
-    background-position: center;
-  }
-
-  .chiffres-section {
-    padding: 16px;
-
-  }
-
-  .chiffres-box {
-    padding: 10px;
-    max-width: 50px;
-
-  }
-  .chiffre-box h3 {
-    font-size: 1.3rem;
-    color: #76ff03; /* Vert clair pour les chiffres */
-    margin-bottom: 0.2rem;
-    font-weight: bold;
-  }
-
-  .chiffre-box p {
-    font-size: 0.8rem;
-    color: #333;
-  }
-  
-
-  .chiffre-box.red h3 {
-    color: #fff;
-  }
-  
-  
-}
 
 .box-demarche{
   padding:30px 50px;
@@ -1054,3 +1051,186 @@ transition: ease-in 0.3s all;
   z-index: 10000;
   text-align: center;
 }
+
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color: rgb(209, 255, 200) !important;
+
+}
+
+.region-setion-main{
+  font-family: "Exo", sans-serif;
+  background-color: #fcfcfc;
+}
+
+.region-setion-main h3{
+  font-family: "Space Grotesk", sans-serif;
+color:#FFCA61;
+font-weight: 700;
+}
+
+.region-setion-main h5{
+  font-family: "Nunito Sans", serif;
+  color:#383838;
+  font-weight: 500;
+  }
+
+  .region-setion-main p{
+line-height:30px ;
+    }
+
+
+
+  .announcement-card img{
+    filter: saturate(0.7);
+  }
+
+  .announcement-card:hover img{
+    filter: saturate(1);
+  }
+
+  .bg-acctualites {
+   background:  url(./../../../../sites/default/files/background2.png) repeat-x #fff center 0px;
+  }
+
+  .card-shadow{
+    background-color: white;
+    width: fit-content;
+  }
+
+  body{
+    overflow-x: hidden !important;
+  }
+
+  .appel-offre-page{
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;;
+ 
+  }
+
+  #block-bootstrap-sass-starter-kit-content > div > div.announcement-card.w-full.px-2.py-4.mt-5 > div.text-section.d-flex.justify-content-between > div > a{
+    color:#f7bc48 !important;
+  }
+
+
+  @media screen and ( max-width:500px) {
+    .logo-img{
+      height:70px !important;
+    }
+
+
+
+    .title-section-padding{
+      padding:3rem 0 1rem 0;
+    }
+
+    .list-unstyled-mobile{
+      margin-left: 10px;
+    }
+
+    .event-card {
+      max-width: 100%;
+      
+    }
+  
+    .box-etatcivil{
+  
+  
+      width: 100% !important;
+      padding:20px;
+    
+    }
+
+ 
+  
+  
+  
+    .anim-typewriter {
+      font-size: 1.5rem !important;
+    }
+  
+    .carousel-inner img{
+      height: calc(100vh - 130px);
+      object-fit: cover;
+      background-position: center;
+    }
+  
+    .chiffres-section {
+      padding: 16px;
+  
+    }
+  
+    .chiffres-box {
+      padding: 10px;
+      max-width: 50px;
+  
+    }
+    
+  
+    .navbar-custom{
+      display: none;
+    }
+    .chiffre-box h3 {
+      font-size: 1.3rem;
+      color: #76ff03; /* Vert clair pour les chiffres */
+      margin-bottom: 0.2rem;
+      font-weight: bold;
+    }
+  
+    .chiffre-box p {
+      font-size: 0.8rem;
+      color: #333;
+    }
+    
+  
+    .chiffre-box.red h3 {
+      color: #fff;
+    }
+
+    .annonce-link2 > .announcement-card{
+      display: flex;
+      flex-direction: row;
+     
+      align-items: center;
+      box-shadow: 0 0 13px 1px rgb(0 0 0 / 16%);
+      background-color: white;
+    }
+
+
+    .announcement-card{
+          display: flex;
+          flex-direction: column;
+ 
+      align-items: end;
+      box-shadow: 0 0 13px 1px rgb(0 0 0 / 16%);
+      background-color: white;
+    }
+
+    #block-bootstrap-sass-starter-kit-content > div > div.announcement-card.w-full.px-2.py-4.mt-5 > div.date-box{
+      padding: 10px 50px;
+      margin-bottom:10px;
+    }    
+   
+    body > div.dialog-off-canvas-main-canvas > div.container > div > div.col-lg-3.mt-5.mt-md-0 > div > div:not(:last-child){
+      display: flex
+      ;
+              flex-direction: row;
+              justify-content: center;
+              align-items: end;
+              box-shadow: 0 0 13px 1px rgb(0 0 0 / 16%);
+              background-color: white;
+    }
+    
+  }
+
+  @media (max-width: 768px) {
+
+    .box-etatcivil{
+  
+  
+      width: 100% !important;
+      padding:20px;
+    
+    }
+    
+  }

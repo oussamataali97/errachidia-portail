@@ -8,10 +8,10 @@
 
 
  <div class="col-md-4 card-annoncess text-content">
-            <a class="annonce-link2" href="{{ base_path ~ 'node/' ~ row.content['#row']._entity.nid.value }}"><div class="card shadow">
+            <a class="annonce-link2" href="{{ url('entity.node.canonical', {'node': row.content['#row']._entity.nid.value}) }}"><div class="card shadow">
                 <img class="img-annonces" src=" {{file_url(row.content['#row']._entity.field_image_event.entity.uri.value)}}" class="card-img-top" alt="Image 1">
               <div class="card-body">
-                <h5 class="card-title"> {{row.content['#row']._entity.field_evenement_title[0].value|slice(0, 50)}}  </h5>
+                <h5 class="card-title"> {{row.content['#row']._entity.field_evenement_title[0].value|slice(0, 100)}}  </h5>
                 <p class="card-date">{{ row.content['#row']._entity.created.value|date("d F Y") }}</p>
                 <p class="card-text annonce-desciptions" >
                  {{ row.content['#row']._entity.field_description_event[0].processed|striptags|slice(0, 100) }}

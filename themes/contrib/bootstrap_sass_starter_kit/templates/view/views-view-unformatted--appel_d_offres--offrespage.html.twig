@@ -1,9 +1,9 @@
-<h2 class="text-orange mb-4 text-center p-5 section-bg">Appels d'offres</h2>
+<h2 class="text-orange mb-4 text-center p-5 section-bg-title appel-offre-page">Appels d'offres</h2>
 
 <div class="container">
     <!-- Formulaire de filtre -->
     <form id="filterForm" class="mb-4">
-        <div class="row">
+        <div class="row gap-3 gap-md-0">
             <!-- Filtre par catégorie -->
             <div class="col-lg-3">
   <select id="categoryFilter" class="form-select">
@@ -43,11 +43,11 @@
              data-status="{% if row.content['#row']._entity.field_statut[0].value == 1 %}ouvert{% else %}fermé{% endif %}"
              data-title="{{ row.content['#row']._entity.field_appel_libelle[0].value | lower }}">
             
-            <div class="date-box p-5">
+            <div class="date-box ">
                 {{ row.content['#row']._entity.field_appel_categorie[0].entity.label }}
             </div>
 
-            <div class="text-section d-flex justify-content-between" style="width:100%;">
+            <div class="text-section d-flex flex-column flex-md-row justify-content-between" style="width:100%;">
                 <div class="content-info">
                     <a style="font-size: 20px;max-width:500px;" class="fw-bolder annonce-link2 text-black"
                        href="{{ base_path ~ 'node/' ~ row.content['#row']._entity.nid.value }}">

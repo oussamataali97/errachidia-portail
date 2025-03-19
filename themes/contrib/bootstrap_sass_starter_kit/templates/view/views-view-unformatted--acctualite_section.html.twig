@@ -5,16 +5,18 @@
    {% for row in rows %}
   
 
- <div class="col-md-4 card-annoncess">
-            <div class="card-shadow">
+ <div class="col-md-4 card-annoncess" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000">
+            <div class="card-shadow" >
                 <img class="img-annonces" src=" {{file_url(row.content['#row']._entity.field_image_actualite.entity.uri.value)}}" class="card-img-top" alt="Image 1">
               <div class="card-body">
-                <h5 class="card-title"> {{row.content['#row']._entity.field_libelle[0].value|slice(0, 50)}}  </h5>
+                <h5 class="card-title"> {{row.content['#row']._entity.field_libelle[0].value}}  </h5>
                 <p class="card-date">{{ row.content['#row']._entity.created.value|date("d F Y") }}
 </p>
                 <p class="card-text annonce-desciptions">
-{{ row.content['#row']._entity.field_description[0].processed|striptags|replace({'&nbsp;': ' '})|slice(0, 50) }}
-                </p>
+{% set trimmed_text = row.content['#row']._entity.field_description[0].processed|striptags|replace({'&nbsp;': ' '}) %}
+{{ trimmed_text|slice(0, 150) }}{% if trimmed_text|length > 150 %}...{% endif %}                </p>
                 <a href="{{ url('entity.node.canonical', {'node': row.content['#row']._entity.nid.value}) }}" class="annonce-link">Lire la suite</a>
               </div>
             </div>

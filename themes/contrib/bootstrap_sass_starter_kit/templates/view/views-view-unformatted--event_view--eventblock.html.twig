@@ -1,13 +1,15 @@
    <div class="col-lg-12 container">
            <div class="row g-4">
-               <h2 class="text-orange mb-4">Touts les evenements</h2>
+               <h2 class="text-orange title-section-padding mt-5">Touts les evenements</h2>
 
    {% for row in rows %}
   
 {% if row.content['#row']._entity.field_date_event.value %}
   {% set raw_date = row.content['#row']._entity.field_date_event.value %}
   {% set day = raw_date|date('d') %}
-  {% set month_year = raw_date|date('F Y') %}
+  {% set month = raw_date|date('F') %}
+{% set year = raw_date|date('Y') %}
+  
 {% endif %}
 
 
@@ -16,19 +18,23 @@
                 <img class="img-annonces" src=" {{file_url(row.content['#row']._entity.field_image_event.entity.uri.value)}}" class="card-img-top" alt="Image 1">
                     <div class="event-card-body">
                         <div class="event-title">
-                          {{row.content['#row']._entity.field_evenement_title[0].value|slice(0, 50)}}
+                
+                          {% set trimmed_text = row.content['#row']._entity.field_evenement_title[0].value|striptags|replace({'&nbsp;': ' '}) %}
+{{ trimmed_text|slice(0, 100) }}{% if trimmed_text|length > 100 %}...{% endif %}
                         </div>
                         <div class="d-flex justify-content-start align-items-center mt-5">
-                         <div class="event-date d-flex align-items-center flex-column ">
+                         <div class="event-date d-flex align-items-center flex-column px-0 px-md-2">
                             <span>{{day}}</span>
-                            <span class="date-text">{{ month_year }}</span>
+                            <span class="date-text">{{ month|slice(0, 3) }}</span>
+                            <span class="date-text float-end">{{ year }}</span>
+
                         </div>
                       
                         <div class="event-info ml-2">
                             <p><i class="fas fa-map-marker-alt"></i>  {{row.content['#row']._entity.field_lieu_evenement[0].value}}</p>
                         </div>
                         </div>
-                                       <a href="{{ base_path ~ 'node/' ~ row.content['#row']._entity.nid.value }}" class="annonce-link">Lire la suite</a>
+                                       <a href="{{ url('entity.node.canonical', {'node': row.content['#row']._entity.nid.value}) }}" class="annonce-link">Voir details</a>
 
                     </div>
                 </div>
