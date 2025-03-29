@@ -7,6 +7,21 @@ html[dir="rtl"] body {
   text-align: left !important;
 }
 
+.paddingtop-content{
+  margin-top: 100px !important;
+}
+
+.primary-navbar2 {
+  position: fixed !important;
+  top: 54px; /* Pour la placer sous la top navbar */
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s;
+  background-color: white;
+}
+
+
+
 html, body {
   overflow-x: hidden !important;
   width: 100% !important;
@@ -739,6 +754,7 @@ color: inherit;
     font-family: "Nunito Sans", serif;
     font-weight:500;
     font-size: 50px;
+    margin-top:96px;
 }
 
 .section-bg-title{
@@ -754,6 +770,8 @@ color: inherit;
   
   font-weight:500;
   font-size: 50px;
+  
+
 }
 
 
@@ -769,6 +787,7 @@ color: inherit;
     font-family: "Nunito Sans", serif;
     font-weight:500;
     font-size: 50px;
+    margin-top:96px;
 }
 
 .card-title2{
@@ -1089,9 +1108,9 @@ line-height:30px ;
     filter: saturate(1);
   }
 
-  .bg-acctualites {
+ /*  .bg-acctualites {
    background:  url(./../../../../sites/default/files/background2.png) repeat-x #fff center 0px;
-  }
+  } */
 
   .card-shadow{
     background-color: white;
@@ -1104,7 +1123,8 @@ line-height:30px ;
 
   .appel-offre-page{
     font-family: "Poppins", sans-serif;
-    background-color: #fff;;
+    background-color: #fff;
+    margin-top: 96px;
  
   }
 
@@ -1112,10 +1132,81 @@ line-height:30px ;
     color:#f7bc48 !important;
   }
 
+  .gallery-item {
+    position: relative;
+    overflow: hidden;  /* Empêche le débordement de l'image */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%; /* Ajuste l'image à la taille du conteneur */
+    height: 240px; /* Fixe une hauteur pour uniformiser */
+    object-fit: cover; /* Coupe l'image pour qu'elle remplisse bien son conteneur */
+    transition: transform 0.4s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Applique le zoom interne */
+    cursor: pointer;
+}
+
+.infrastructure{
+  font-family: "Exo", sans-serif;
+
+}
+
+
+
 
   @media screen and ( max-width:500px) {
     .logo-img{
       height:70px !important;
+    }
+
+    
+.box-demarche{
+  padding:30px 50px;
+  border:1px solid rgb(226, 226, 226);
+  max-width: 100% !important;
+  margin:2px auto;
+  text-align: center;
+}
+
+.dropdown-menu {
+  display: none; /* Hide dropdown by default */
+  position: static; /* Make it behave normally */
+  box-shadow: none;
+}
+
+.nav-item.show .dropdown-menu {
+  display: block !important; /* Show when the parent is clicked */
+}
+
+.dropdown-toggle::after {
+  content: "\25BC"; /* Add a small down arrow */
+  float: right;
+  margin-left: 5px;
+}
+
+
+
+
+    .section-demarche{
+
+      position: relative;
+        display: block;
+        padding: 80px 0 0;
+        z-index: 1;
+        background: url(../../../../sites/default/files/motif.png);
+        background-size: 200px;
+        color:rgb(37, 37, 37);
+        text-transform: uppercase;
+        font-family: "Poppins", serif;
+        font-weight:500;
+        font-size: 25px;
+        margin-top: 65px;
+        
     }
 
 
@@ -1141,6 +1232,15 @@ line-height:30px ;
     
     }
 
+    .paddingtop-content{
+      margin-top: 96px !important;
+    }
+    
+
+    
+    .appel-offre-page{
+      margin-top: 56px !important;
+    }
  
   
   
@@ -1152,7 +1252,7 @@ line-height:30px ;
     .carousel-inner img{
       height: calc(100vh - 130px);
       object-fit: cover;
-      background-position: center;
+      object-position: center;
     }
   
     .chiffres-section {
@@ -1164,6 +1264,11 @@ line-height:30px ;
       padding: 10px;
       max-width: 50px;
   
+    }
+
+
+    .primary-navbar2{
+      top:0px !important;
     }
     
   
@@ -1234,3 +1339,70 @@ line-height:30px ;
     }
     
   }
+
+  .modal{
+    font-family: "Exo", sans-serif;
+
+  }
+
+  .city-title{
+    color: #faaf4d !important;
+  }
+
+
+  #navbarNav > ul > li > i{
+    font-size: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out all;
+  }
+
+  
+  #navbarNav > ul > li > i:hover{
+ color:white;
+ transition: 0.3s ease-in-out all;
+  }
+
+  .tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 12px;
+    z-index: 1000;
+  }
+
+  .tooltip.visible {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  @media (min-width: 992px) { 
+    .modal-dialog {
+        --bs-modal-width: 800px !important; /* Augmente la largeur du modal */
+    }
+}
+
+
+
+@media (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .dropdown-menu {
+    display: none;
+    position: static;
+    box-shadow: none;
+  }
+
+  .nav-item.show .dropdown-menu {
+    display: block !important;
+  }
+}

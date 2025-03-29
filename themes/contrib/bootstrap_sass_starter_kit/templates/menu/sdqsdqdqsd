@@ -13,9 +13,11 @@
         {% for item in items %}
           <li class="nav-item {% if item.below is not empty %} dropdown{% endif %}">
             <a 
-              class="nav-link text-uppercase {% if item.below is not empty %} dropdown-toggle parent-link{% endif %}" 
+              class="nav-link text-uppercase {% if item.below is not empty %} dropdown-toggle{% endif %}" 
               href="{{ item.url }}" 
-              {% if item.below is not empty %} data-has-submenu="true" {% endif %}
+              {% if item.below is not empty %} 
+                data-bs-toggle="dropdown" role="button" aria-expanded="false"
+              {% endif %}
             >
               {{ item.title }}
             </a>

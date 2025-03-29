@@ -1,4 +1,6 @@
+
 function applyFilters() {
+   
     let category = document.getElementById("categoryFilter").value.toLowerCase();
     let status = document.getElementById("statusFilter").value.toLowerCase();
     let keyword = document.getElementById("searchKeyword").value.toLowerCase();
@@ -38,3 +40,4 @@ function resetFilters() {
     document.getElementById("searchKeyword").value = "";
     applyFilters();
 }
+

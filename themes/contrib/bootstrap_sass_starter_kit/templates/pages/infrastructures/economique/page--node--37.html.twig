@@ -1,0 +1,70 @@
+
+{{page.topheader}}
+{{page.mainheader}}
+<h5 class="text-orange mb-4 text-center  p-5 section-demarche">Economie
+
+</h5>
+
+
+<div class="container mt-4 infrastructure">
+    <div class="row g-3">
+        <!-- Image 1 -->
+   
+        <!-- Image 2 -->
+        
+        <div class="col-md-4 ">
+        <div class="gallery-item">
+            <img src="{{ file_url('public://elevage.webp') }}" class="img-fluid rounded shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('{{ file_url('public://elevage.webp') }}')">
+         </div>   
+            <h5 class="text-center mt-2">L’élevage</h5>
+        </div>
+        <!-- Image 3 -->
+        <div class="col-md-4">
+         <div class="gallery-item">
+            <img src="{{ file_url('public://artisanat.webp') }}" class="img-fluid rounded shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('{{ file_url('public://artisanat.webp') }}')">
+           </div>  
+                   <h5 class="text-center mt-2">L’industrie et l’artisanat
+</h5>
+
+        </div>
+
+                 <div class="col-md-4">
+         <div class="gallery-item">
+            <img src="{{ file_url('public://commerce.webp') }}" class="img-fluid rounded shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('{{ file_url('public://commerce.webp') }}')">
+</div>
+                   <h5 class="text-center mt-2">Le commerce</h5>
+
+        </div>
+
+                 <div class="col-md-4">
+         <div class="gallery-item">
+            <img src="{{ file_url('public://mines.webp') }}" class="img-fluid rounded shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('{{ file_url('public://mines.webp') }}')">
+</div>
+                   <h5 class="text-center mt-2">Les mines</h5>
+
+        </div>
+
+                 <div class="col-md-4">
+         <div class="gallery-item">
+            <img src="{{ file_url('public://oasis.webp') }}" class="img-fluid rounded shadow-sm" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="openModal('{{ file_url('public://oasis.webp') }}')">
+</div>
+                   <h5 class="text-center mt-2">L'agriculture</h5>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center mt-2">
+                <img id="modalImage" class="img-fluid rounded" width="100%" height="100%">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{{page.footer}}
